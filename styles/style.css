@@ -1,5 +1,214 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: var(--background-color);
+}
+
+.header {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding: 20px;
+  margin-bottom: 60px;
+  height: 768px;
+}
+
+.rec-label {
+  position: absolute;
+  top: 20px;
+  right: 29px;
+  font-size: var(--base-font-size);
+  font-weight: normal;
+  line-height: 25px;
+  color: var(--menu-button-color);
+}
+
+/* Add the dot using a pseudo-element */
+.rec-label::after {
+  content: '';
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin-left: 10px;
+  background-color: var(--menu-button-color);
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px #FF0070;
+  vertical-align: middle;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.decorated-zone {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.decorated-zone::before,
+.decorated-zone::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-style: solid;
+}
+
+.decorated-zone::before {
+  top: 20px;
+  right: 20px;
+  border-width: 1px 1px 0 0; /* Уголок в правом верхнем углу */
+  border-color: var(--menu-button-color) var(--menu-button-color) transparent transparent;
+}
+
+.decorated-zone::after {
+  bottom: 20px;
+  left: 20px;
+  border-width: 0 0 1px 1px; /* Уголок в нижнем левом углу */
+  border-color: transparent transparent var(--menu-button-color) var(--menu-button-color);
+}
+
+.header__theme-menu-button {
+  font-family: "IBM Plex mono", monospace;
+  font-weight: normal;
+  font-size: var(--base-font-size);
+  color: var(--menu-button-color);
+  background-color: transparent;
+  border: none;
+  text-transform: lowercase;
+  padding-left: 13px;
+  padding-right: 13px;
+  cursor: pointer;
+}
+
+.header__theme-menu-button_active {
+  outline: 1px solid var(--menu-button-color);
+}
+
+.header__title {
+  font-family: "IBM Plex mono", monospace;
+  font-weight: bold;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  margin-left: -20px;
+  color: var(--title-color);
+  line-height: 82.5%;
+  text-shadow: #FF8DCB 4px 4px 0;
+  align-self: center;
+}
+
+.header__description {
+  font-family: "IBM Plex mono", monospace;
+  font-weight: bold;
+  font-size: var(--base-font-size);
+  color: var(--accent-text-color);
+  align-self: center;
+  justify-self: right;
+  max-width: 491px;
+}
+
+.title-decor {
+  background-color: var(--background-accent-color);
+}
+
+.main {
+  font-family: "IBM Plex mono", monospace;
+  font-weight: normal;
+  font-size: var(--base-font-size);
+  color: var(--accent-text-color);
+  line-height: 1.3;
+  padding: 0 20px 0 20px;
+}
+
+.main__section {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px;
+  margin-bottom: 80px;
+}
+
+.main__section-rows {
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 20px;
+  margin-bottom: 80px;
+}
+
+.main__title {
+  font-size: inherit;
+  max-width: 315px;
+}
+
+.main__block {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 20px;
+
+}
+
+.main__block-rows {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.main__subtitle {
+  font-size: inherit;
+  margin-bottom: 10px;
+}
+
+.section__heading {
+  font-size: inherit;
+  margin-bottom: 20px;
+}
+
+.second__subtitle {
+  font-size: inherit;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+
+.image__wrapper {
+  display: grid;
+  grid-gap: 20px; /* Расстояние между картинками */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Адаптивная сетка с минимальной шириной картинок */
+  grid-auto-flow: dense; /* Плотное размещение элементов */
+}
+
+.image__wrapper img {
+  width: 100%;
+  height: auto; /* Поддержка пропорций картинок */
+  object-fit: cover; /* Обрезка картинки по контейнеру, чтобы избежать искажений */
+}
+
+
+git @media (max-width: 1023px) {
+}
+
+@media (max-width: 767px) {
+  .header__theme-menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: end;
+    justify-content: end;
+  }
+
+  .main__section {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 374px) {
 }
