@@ -3,7 +3,6 @@
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-
 .page.theme_dark {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -14,7 +13,10 @@
   --menu-button-color: #FF0070;
   --background-accent-color: #FF0070;
   --accent-text-color: #000028;
-  .decorated-zone {
-  background-image: url("../images/cover-image-dark.png");
-}
+  --section-title-color: #FF0070;
+--section-text-color: #F1B2CE;
+
+  .background {
+    background-image: url("../images/cover-image-dark.png");
+  }
 }

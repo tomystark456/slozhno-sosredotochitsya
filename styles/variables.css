@@ -4,5 +4,19 @@
 */
 :root {
   --base-font-size: 18px;
+  --background-color: #FFF1F7;
+  --title-color: #FFC2E6;
+  --menu-button-color: #353430;
+  --background-accent-color: #FF8DCB;
+  --accent-text-color: #353430;
+  --section-title-color: #353430;
+  --section-text-color: #353430;
 
+  .background {
+    background-image: url("../images/cover-image-light.png");
+  }
+
+  .rec-label {
+    display: none;
+  }
 }

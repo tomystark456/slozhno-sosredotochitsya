@@ -13,7 +13,9 @@
   --menu-button-color: #353430;
   --background-accent-color: #FF8DCB;
   --accent-text-color: #353430 ;
-  .decorated-zone {
+  --section-title-color: #353430;
+  --section-text-color: #353430;
+  .background {
   background-image: url("../images/cover-image-light.png");
 }
 
