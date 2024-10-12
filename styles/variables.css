@@ -11,12 +11,30 @@
   --accent-text-color: #353430;
   --section-title-color: #353430;
   --section-text-color: #353430;
+  --logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --logo-size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);;
+  background-image: url("../images/cover-image-light.png");
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+}
 
-  .background {
-    background-image: url("../images/cover-image-light.png");
-  }
-
-  .rec-label {
-    display: none;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #000028;
+    --title-color: #DB00FF;
+    --menu-button-color: #FF0070;
+    --background-accent-color: #FF0070;
+    --accent-text-color: #000028;
+    --section-title-color: #FF0070;
+    --section-text-color: #F1B2CE;
+    background-image: url("../images/cover-image-dark.png");
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
   }
 }

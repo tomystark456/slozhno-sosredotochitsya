@@ -11,12 +11,16 @@
   --background-color: #000028;
   --title-color: #DB00FF;
   --menu-button-color: #FF0070;
+  --menu-button-color-hover: #FF0070;
+  --menu-button-outline-color: rgba(255, 0, 112, 0.4);
   --background-accent-color: #FF0070;
   --accent-text-color: #000028;
+  --link-shadow-color: #FF0070;
   --section-title-color: #FF0070;
---section-text-color: #F1B2CE;
+  --section-text-color: #F1B2CE;
+  background-image: url("../images/cover-image-dark.png");
 
-  .background {
-    background-image: url("../images/cover-image-dark.png");
+  .rec-label {
+    display: block;
   }
 }
