@@ -6,14 +6,17 @@
   --base-font-size: 18px;
   --background-color: #FFF1F7;
   --title-color: #FFC2E6;
+
   --menu-button-color: #353430;
+   --menu-button-color-hover: #32312D;
+  --menu-button-outline-color: rgba(50, 49, 45, 0.4);
   --background-accent-color: #FF8DCB;
   --accent-text-color: #353430;
+  --link-shadow-color: #FF8DCB;
   --section-title-color: #353430;
   --section-text-color: #353430;
   --logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   --logo-size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);;
-  background-image: url("../images/cover-image-light.png");
   background-size: cover;
   background-position: top center;
   background-attachment: fixed;
@@ -26,8 +29,11 @@
     --background-color: #000028;
     --title-color: #DB00FF;
     --menu-button-color: #FF0070;
+     --menu-button-color-hover: #FF0070;
+  --menu-button-outline-color: rgba(255, 0, 112, 0.4);
     --background-accent-color: #FF0070;
     --accent-text-color: #000028;
+     --link-shadow-color: #FF0070;
     --section-title-color: #FF0070;
     --section-text-color: #F1B2CE;
     background-image: url("../images/cover-image-dark.png");
