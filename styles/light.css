@@ -9,7 +9,6 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --title-color: #FFC2E6;
-
   --menu-button-color: #353430;
   --menu-button-color-hover: #32312D;
   --menu-button-outline-color: rgba(50, 49, 45, 0.4);
@@ -20,10 +19,11 @@
   --section-text-color: #353430;
   --background-color: #FFF1F7;
   --background-image: url("../images/cover-image-light.png");
+
+  .rec-label {
+    display: none;
+  }
 }
 
-.rec-label {
-  display: none;
-}
 
 
