@@ -19,8 +19,6 @@
   background-size: cover;
   background-position: top center;
   background-attachment: fixed;
-  width: 100vw;
-  height: 100vh;
   --background-image: url("../images/cover-image-light.png");
 
   .rec-label {
